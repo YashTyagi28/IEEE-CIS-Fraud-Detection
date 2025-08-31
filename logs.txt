@@ -1,3 +1,5 @@
+TABNET TRAINING LOG:
+
 epoch 0  | loss: 0.1376  | val_0_auc: 0.80378 |  0:01:12s
 epoch 1  | loss: 0.12411 | val_0_auc: 0.82701 |  0:02:38s
 epoch 2  | loss: 0.11979 | val_0_auc: 0.83487 |  0:04:04s
@@ -31,7 +33,8 @@ epoch 24 | loss: 0.08708 | val_0_auc: 0.88854 |  0:38:33s
 
 
 
-Training CatBoost model...
+CATBOOST TRAINING LOG:
+
 0:      test: 0.6197257 best: 0.6197257 (0)     total: 215ms    remaining: 14m 18s
 50:     test: 0.8756348 best: 0.8756348 (50)    total: 3.76s    remaining: 4m 51s
 100:    test: 0.8884324 best: 0.8884324 (100)   total: 7.28s    remaining: 4m 41s
