@@ -1,0 +1,115 @@
+epoch 0  | loss: 0.1376  | val_0_auc: 0.80378 |  0:01:12s
+epoch 1  | loss: 0.12411 | val_0_auc: 0.82701 |  0:02:38s
+epoch 2  | loss: 0.11979 | val_0_auc: 0.83487 |  0:04:04s
+epoch 3  | loss: 0.11761 | val_0_auc: 0.83916 |  0:05:35s
+epoch 4  | loss: 0.11409 | val_0_auc: 0.85128 |  0:07:07s
+epoch 5  | loss: 0.11073 | val_0_auc: 0.84566 |  0:08:40s
+epoch 6  | loss: 0.11002 | val_0_auc: 0.85833 |  0:10:03s
+epoch 7  | loss: 0.10524 | val_0_auc: 0.86609 |  0:11:21s
+epoch 8  | loss: 0.10173 | val_0_auc: 0.86545 |  0:12:40s
+epoch 9  | loss: 0.0996  | val_0_auc: 0.87749 |  0:14:04s
+epoch 10 | loss: 0.09719 | val_0_auc: 0.88117 |  0:15:34s
+epoch 11 | loss: 0.09526 | val_0_auc: 0.88153 |  0:17:06s
+epoch 12 | loss: 0.09415 | val_0_auc: 0.88669 |  0:18:42s
+epoch 13 | loss: 0.09284 | val_0_auc: 0.88729 |  0:20:31s
+epoch 14 | loss: 0.09182 | val_0_auc: 0.88853 |  0:22:32s
+epoch 15 | loss: 0.09054 | val_0_auc: 0.88883 |  0:24:11s
+epoch 16 | loss: 0.08963 | val_0_auc: 0.88779 |  0:25:56s
+epoch 17 | loss: 0.08982 | val_0_auc: 0.89219 |  0:27:36s
+epoch 18 | loss: 0.08909 | val_0_auc: 0.89306 |  0:29:20s
+epoch 19 | loss: 0.08858 | val_0_auc: 0.88357 |  0:31:03s
+epoch 20 | loss: 0.08851 | val_0_auc: 0.89254 |  0:32:43s
+epoch 21 | loss: 0.08753 | val_0_auc: 0.89189 |  0:34:25s
+epoch 22 | loss: 0.08661 | val_0_auc: 0.88944 |  0:35:59s
+epoch 23 | loss: 0.08663 | val_0_auc: 0.89232 |  0:37:17s
+epoch 24 | loss: 0.08708 | val_0_auc: 0.88854 |  0:38:33s
+
+
+
+
+
+
+
+
+Training CatBoost model...
+0:      test: 0.6197257 best: 0.6197257 (0)     total: 215ms    remaining: 14m 18s
+50:     test: 0.8756348 best: 0.8756348 (50)    total: 3.76s    remaining: 4m 51s
+100:    test: 0.8884324 best: 0.8884324 (100)   total: 7.28s    remaining: 4m 41s
+150:    test: 0.8961340 best: 0.8961340 (150)   total: 11.9s    remaining: 5m 4s
+200:    test: 0.9016359 best: 0.9016359 (200)   total: 17.5s    remaining: 5m 31s
+250:    test: 0.9057021 best: 0.9057021 (250)   total: 23s      remaining: 5m 44s
+300:    test: 0.9089519 best: 0.9089519 (300)   total: 28.7s    remaining: 5m 52s
+350:    test: 0.9119105 best: 0.9119105 (350)   total: 34.4s    remaining: 5m 57s
+400:    test: 0.9142242 best: 0.9142242 (400)   total: 39.8s    remaining: 5m 57s
+450:    test: 0.9167313 best: 0.9167385 (449)   total: 45.3s    remaining: 5m 56s
+500:    test: 0.9192043 best: 0.9192043 (500)   total: 51s      remaining: 5m 56s
+550:    test: 0.9210673 best: 0.9210773 (549)   total: 56.5s    remaining: 5m 53s
+600:    test: 0.9227656 best: 0.9227686 (599)   total: 1m 2s    remaining: 5m 52s
+650:    test: 0.9241867 best: 0.9241867 (650)   total: 1m 8s    remaining: 5m 50s
+700:    test: 0.9254014 best: 0.9254014 (700)   total: 1m 13s   remaining: 5m 47s
+750:    test: 0.9265912 best: 0.9265912 (750)   total: 1m 19s   remaining: 5m 45s
+800:    test: 0.9280436 best: 0.9280436 (800)   total: 1m 25s   remaining: 5m 43s
+850:    test: 0.9293057 best: 0.9293095 (847)   total: 1m 31s   remaining: 5m 40s
+900:    test: 0.9305148 best: 0.9305148 (900)   total: 1m 38s   remaining: 5m 37s
+950:    test: 0.9315401 best: 0.9315401 (950)   total: 1m 44s   remaining: 5m 34s
+1000:   test: 0.9326973 best: 0.9326973 (1000)  total: 1m 50s   remaining: 5m 30s
+1050:   test: 0.9336916 best: 0.9336916 (1050)  total: 1m 56s   remaining: 5m 26s
+1100:   test: 0.9352462 best: 0.9352462 (1100)  total: 2m 2s    remaining: 5m 22s
+1150:   test: 0.9359939 best: 0.9359939 (1150)  total: 2m 8s    remaining: 5m 18s
+1200:   test: 0.9369103 best: 0.9369107 (1199)  total: 2m 14s   remaining: 5m 13s
+1250:   test: 0.9379086 best: 0.9379086 (1250)  total: 2m 20s   remaining: 5m 8s
+1300:   test: 0.9387731 best: 0.9387731 (1300)  total: 2m 26s   remaining: 5m 3s
+1350:   test: 0.9395919 best: 0.9395919 (1350)  total: 2m 31s   remaining: 4m 57s
+1400:   test: 0.9404573 best: 0.9404573 (1400)  total: 2m 37s   remaining: 4m 52s
+1450:   test: 0.9414315 best: 0.9414315 (1450)  total: 2m 43s   remaining: 4m 46s
+1500:   test: 0.9421424 best: 0.9421424 (1500)  total: 2m 48s   remaining: 4m 40s
+1550:   test: 0.9427453 best: 0.9427453 (1550)  total: 2m 53s   remaining: 4m 34s
+1600:   test: 0.9433352 best: 0.9433454 (1599)  total: 2m 59s   remaining: 4m 28s
+1650:   test: 0.9443481 best: 0.9443481 (1650)  total: 3m 4s    remaining: 4m 22s
+1700:   test: 0.9450343 best: 0.9450343 (1700)  total: 3m 9s    remaining: 4m 16s
+1750:   test: 0.9458719 best: 0.9458739 (1749)  total: 3m 15s   remaining: 4m 10s
+1800:   test: 0.9463592 best: 0.9463714 (1798)  total: 3m 20s   remaining: 4m 4s
+1850:   test: 0.9467575 best: 0.9467575 (1850)  total: 3m 25s   remaining: 3m 58s
+1900:   test: 0.9472455 best: 0.9472455 (1900)  total: 3m 30s   remaining: 3m 52s
+1950:   test: 0.9476517 best: 0.9476517 (1950)  total: 3m 35s   remaining: 3m 46s
+2000:   test: 0.9482453 best: 0.9482457 (1999)  total: 3m 41s   remaining: 3m 40s
+2050:   test: 0.9488325 best: 0.9488378 (2049)  total: 3m 47s   remaining: 3m 36s
+2100:   test: 0.9493659 best: 0.9493659 (2100)  total: 3m 54s   remaining: 3m 31s
+2150:   test: 0.9498481 best: 0.9498481 (2150)  total: 4m       remaining: 3m 27s
+2200:   test: 0.9503059 best: 0.9503059 (2200)  total: 4m 6s    remaining: 3m 21s
+2250:   test: 0.9508096 best: 0.9508096 (2250)  total: 4m 12s   remaining: 3m 16s
+2300:   test: 0.9510547 best: 0.9510547 (2300)  total: 4m 18s   remaining: 3m 10s
+2350:   test: 0.9512950 best: 0.9512950 (2350)  total: 4m 24s   remaining: 3m 5s
+2400:   test: 0.9516463 best: 0.9516528 (2399)  total: 4m 30s   remaining: 2m 59s
+2450:   test: 0.9521300 best: 0.9521300 (2450)  total: 4m 36s   remaining: 2m 54s
+2500:   test: 0.9525297 best: 0.9525297 (2500)  total: 4m 41s   remaining: 2m 48s
+2550:   test: 0.9527694 best: 0.9527753 (2547)  total: 4m 47s   remaining: 2m 43s
+2600:   test: 0.9532260 best: 0.9532260 (2600)  total: 4m 52s   remaining: 2m 37s
+2650:   test: 0.9535407 best: 0.9535407 (2650)  total: 4m 58s   remaining: 2m 31s
+2700:   test: 0.9537540 best: 0.9537541 (2699)  total: 5m 3s    remaining: 2m 25s
+2750:   test: 0.9540518 best: 0.9540518 (2750)  total: 5m 8s    remaining: 2m 20s
+2800:   test: 0.9543696 best: 0.9543696 (2800)  total: 5m 13s   remaining: 2m 14s
+2850:   test: 0.9548115 best: 0.9548115 (2850)  total: 5m 19s   remaining: 2m 8s
+2900:   test: 0.9550104 best: 0.9550104 (2900)  total: 5m 24s   remaining: 2m 2s
+2950:   test: 0.9553363 best: 0.9553388 (2949)  total: 5m 29s   remaining: 1m 57s
+3000:   test: 0.9555365 best: 0.9555365 (3000)  total: 5m 34s   remaining: 1m 51s
+3050:   test: 0.9558521 best: 0.9558575 (3042)  total: 5m 39s   remaining: 1m 45s
+3100:   test: 0.9561354 best: 0.9561447 (3099)  total: 5m 45s   remaining: 1m 40s
+3150:   test: 0.9564664 best: 0.9564664 (3150)  total: 5m 50s   remaining: 1m 34s
+3200:   test: 0.9567388 best: 0.9567388 (3200)  total: 5m 55s   remaining: 1m 28s
+3250:   test: 0.9570979 best: 0.9571007 (3248)  total: 6m       remaining: 1m 23s
+3300:   test: 0.9573282 best: 0.9573287 (3299)  total: 6m 6s    remaining: 1m 17s
+3350:   test: 0.9574863 best: 0.9574863 (3350)  total: 6m 11s   remaining: 1m 11s
+3400:   test: 0.9576116 best: 0.9576116 (3400)  total: 6m 16s   remaining: 1m 6s
+3450:   test: 0.9579511 best: 0.9579571 (3440)  total: 6m 22s   remaining: 1m
+3500:   test: 0.9582626 best: 0.9582652 (3498)  total: 6m 27s   remaining: 55.3s
+3550:   test: 0.9584713 best: 0.9584713 (3550)  total: 6m 33s   remaining: 49.8s
+3600:   test: 0.9587118 best: 0.9587396 (3593)  total: 6m 39s   remaining: 44.2s
+3650:   test: 0.9589058 best: 0.9589059 (3649)  total: 6m 45s   remaining: 38.7s
+3700:   test: 0.9590269 best: 0.9590269 (3700)  total: 6m 50s   remaining: 33.2s
+3750:   test: 0.9592657 best: 0.9592657 (3750)  total: 6m 56s   remaining: 27.7s
+3800:   test: 0.9594573 best: 0.9594573 (3800)  total: 7m 2s    remaining: 22.1s
+3850:   test: 0.9596774 best: 0.9596778 (3847)  total: 7m 8s    remaining: 16.6s
+3900:   test: 0.9597720 best: 0.9597811 (3893)  total: 7m 14s   remaining: 11s
+3950:   test: 0.9599344 best: 0.9599388 (3947)  total: 7m 19s   remaining: 5.45s
+3999:   test: 0.9601182 best: 0.9601182 (3999)  total: 7m 24s   remaining: 0us
