@@ -116,3 +116,61 @@ CATBOOST TRAINING LOG:
 3900:   test: 0.9597720 best: 0.9597811 (3893)  total: 7m 14s   remaining: 11s
 3950:   test: 0.9599344 best: 0.9599388 (3947)  total: 7m 19s   remaining: 5.45s
 3999:   test: 0.9601182 best: 0.9601182 (3999)  total: 7m 24s   remaining: 0us
+
+
+
+
+XGBOOST TRAINING LOG:
+
+[0]     validation_0-auc:0.84231
+[50]    validation_0-auc:0.91098
+[100]   validation_0-auc:0.92593
+[150]   validation_0-auc:0.93443
+[200]   validation_0-auc:0.94126
+[250]   validation_0-auc:0.94515
+[300]   validation_0-auc:0.94834
+[350]   validation_0-auc:0.95133
+[400]   validation_0-auc:0.95338
+[450]   validation_0-auc:0.95556
+[500]   validation_0-auc:0.95712
+[550]   validation_0-auc:0.95830
+[600]   validation_0-auc:0.95979
+[650]   validation_0-auc:0.96067
+[700]   validation_0-auc:0.96150
+[750]   validation_0-auc:0.96229
+[800]   validation_0-auc:0.96274
+[850]   validation_0-auc:0.96317
+[900]   validation_0-auc:0.96345
+[950]   validation_0-auc:0.96393
+[1000]  validation_0-auc:0.96453
+[1050]  validation_0-auc:0.96480
+[1100]  validation_0-auc:0.96509
+[1150]  validation_0-auc:0.96547
+[1200]  validation_0-auc:0.96570
+[1250]  validation_0-auc:0.96605
+[1300]  validation_0-auc:0.96618
+[1350]  validation_0-auc:0.96638
+[1400]  validation_0-auc:0.96642
+[1450]  validation_0-auc:0.96647
+[1500]  validation_0-auc:0.96662
+[1200]  validation_0-auc:0.96570
+[1250]  validation_0-auc:0.96605
+[1300]  validation_0-auc:0.96618
+[1350]  validation_0-auc:0.96638
+[1400]  validation_0-auc:0.96642
+[1450]  validation_0-auc:0.96647
+[1500]  validation_0-auc:0.96662
+[1400]  validation_0-auc:0.96642
+[1450]  validation_0-auc:0.96647
+[1500]  validation_0-auc:0.96662
+[1500]  validation_0-auc:0.96662
+[1550]  validation_0-auc:0.96672
+[1600]  validation_0-auc:0.96678
+[1650]  validation_0-auc:0.96680
+[1550]  validation_0-auc:0.96672
+[1600]  validation_0-auc:0.96678
+[1650]  validation_0-auc:0.96680
+[1600]  validation_0-auc:0.96678
+[1650]  validation_0-auc:0.96680
+[1650]  validation_0-auc:0.96680
+[1663]  validation_0-auc:0.96680

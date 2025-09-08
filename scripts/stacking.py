@@ -13,15 +13,19 @@ RANDOM_STATE = 42
 # === Load Base Model Predictions ===
 tabnet_preds = pd.read_csv(os.path.join(RESULTS_DIR, 'tabnet_val_predictions.csv'))
 catboost_preds = pd.read_csv(os.path.join(RESULTS_DIR, 'catboost_val_predictions.csv'))
+xgboost_preds = pd.read_csv(os.path.join(RESULTS_DIR, 'xgboost_val_predictions.csv'))
 
 # === Validate alignment of labels ===
-assert (tabnet_preds['y_true'] == catboost_preds['y_true']).all(), "Mismatch in validation labels between models!"
+assert (tabnet_preds['y_true'] == catboost_preds['y_true']).all(), "Mismatch in validation labels between TabNet and CatBoost!"
+assert (tabnet_preds['y_true'] == xgboost_preds['y_true']).all(), "Mismatch in validation labels between TabNet and XGBoost!"
 
 # === Prepare meta-features and target ===
 X_meta = pd.DataFrame({
     'tabnet': tabnet_preds['y_pred_prob'],
-    'catboost': catboost_preds['y_pred_prob']
+    'catboost': catboost_preds['y_pred_prob'],
+    'xgboost': xgboost_preds['y_pred_prob']
 })
+
 y_meta = tabnet_preds['y_true']
 
 # === Train/Val split for meta-model (to avoid overfitting on meta-model) ===
@@ -41,21 +45,25 @@ print("Classification Report:")
 print(classification_report(y_val_meta, (val_probs > 0.5).astype(int)))
 
 # === Save meta-model ===
-if not os.path.exists(MODEL_DIR): os.makedirs(MODEL_DIR)
+if not os.path.exists(MODEL_DIR):
+    os.makedirs(MODEL_DIR)
 meta_model_path = os.path.join(MODEL_DIR, "stacking_meta_model.pkl")
 joblib.dump(meta_clf, meta_model_path)
 print(f"Meta-model saved to {meta_model_path}")
 
 # === Save stacked validation predictions ===
-if not os.path.exists(RESULTS_DIR): os.makedirs(RESULTS_DIR)
+if not os.path.exists(RESULTS_DIR):
+    os.makedirs(RESULTS_DIR)
 stacked_results = X_val_meta.copy()
 stacked_results['y_true'] = y_val_meta
 stacked_results['meta_pred_prob'] = val_probs
 stacked_results.to_csv(os.path.join(RESULTS_DIR, 'stacked_val_predictions.csv'), index=False)
 
-# === Save stacked validation metrics to CSV ===
-metrics_report = classification_report(y_val_meta, (val_probs > 0.5).astype(int), output_dict=True)
-metrics_df = pd.DataFrame(metrics_report).transpose()
-metrics_df.to_csv(os.path.join(RESULTS_DIR, 'stacked_val_metrics.csv'))
+# === Save stacked validation metrics to TXT file ===
+metrics_text = f"ROC-AUC: {roc_auc:.4f}\n"
+metrics_text += classification_report(y_val_meta, (val_probs > 0.5).astype(int))
+
+with open(os.path.join(RESULTS_DIR, 'stacked_val_metrics.txt'), 'w') as f:
+    f.write(metrics_text)
 
 print("Stacking pipeline completed successfully and metrics saved.")
